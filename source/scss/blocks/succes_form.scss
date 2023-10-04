@@ -15,15 +15,14 @@
         border-radius: 50%;
         background-color: $green;
         position: relative;
-    }
 
-
-    &__icon--svg {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        fill: $white
+        & > svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            fill: $white
+        }
     }
 
     &__description {
@@ -32,6 +31,10 @@
         color: $black;
         display: grid;
         gap: 15px;
+
+        &:first-child {
+            font-weight: 600;
+        }
     }
 
     &__back {

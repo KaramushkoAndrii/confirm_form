@@ -1,3 +1,7 @@
+@import "blocks/variables.scss";
+@import "blocks/succes_form.scss";
+@import "general/fonts.scss";
+
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +12,5 @@
 
 body {
     position: relative;
+    font-family: 'Roboto Flex', sans-serif;
 }
-
-@import "blocks/variables.scss";
-@import "blocks/succes_form.scss";

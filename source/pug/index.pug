@@ -2,24 +2,16 @@ include layout/head.pug
 
 body
         
-        .order__wrapper.order 
+        .order
             .order__icon 
-                svg.order__icon--svg(width="48" height="48")
+                svg(width="48" height="48")
                     use(xlink:href=("img/sprites/sprite-mono.svg#done"))
             .order__description 
-                p.order__done 
-                    | Заказ № 
-                    span#orderNumber
-                        | 5426589
-                    | успешно оформлен
-                p.order__thanks 
-                    | Благодарим за покупка. Сумма заказа
-                    span#orderPrice 
-                        | 3 548 
-                    |грн 
-                p.order__details 
-                    | Детали заказа можно посмотреть в личном кабинете или в письме, отправленном на ваш email.
-                p.order__callback 
-                    | Если у вас остались вопросы свяжитесь с нами по телефону: +38 067 941-86-45
+                p Заказ №  5426589 успешно оформлен
+                p   Благодарим за покупку.
+                    br  
+                    | Сумма заказа 3 548 грн 
+                p   Детали заказа можно посмотреть в личном кабинете или в письме, отправленном на ваш email.
+                p   Если у вас остались вопросы свяжитесь с нами по телефону: +38 067 941-86-45
             a.order__back(href="#")
-                | Вернуться в магазин
+                b Вернуться в магазин

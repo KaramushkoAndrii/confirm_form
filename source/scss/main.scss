@@ -6,5 +6,9 @@
     text-decoration: none;
 }
 
+body {
+    position: relative;
+}
+
 @import "blocks/variables.scss";
 @import "blocks/succes_form.scss";

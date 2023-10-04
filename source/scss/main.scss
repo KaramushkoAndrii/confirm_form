@@ -1,5 +1,5 @@
 @import "blocks/variables.scss";
-@import "blocks/succes_form.scss";
+@import "blocks/order.scss";
 @import "general/fonts.scss";
 
 *{
@@ -11,6 +11,10 @@
 }
 
 body {
-    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Roboto Flex', sans-serif;
 }

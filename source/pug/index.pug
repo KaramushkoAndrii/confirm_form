@@ -2,11 +2,11 @@ include layout/head.pug
 
 body
         
-        .main__wrapper 
-            .succes__icon 
-                svg(width="48" height="48")
+        .order__wrapper.order 
+            .order__icon 
+                svg.order__icon--svg(width="48" height="48")
                     use(xlink:href=("img/sprites/sprite-mono.svg#done"))
-            .succes__description 
+            .order__description 
                 p.order__done 
                     | Заказ № 
                     span#orderNumber
@@ -21,5 +21,5 @@ body
                     | Детали заказа можно посмотреть в личном кабинете или в письме, отправленном на ваш email.
                 p.order__callback 
                     | Если у вас остались вопросы свяжитесь с нами по телефону: +38 067 941-86-45
-            a.back__toTheShop(href="#")
+            a.order__back(href="#")
                 | Вернуться в магазин

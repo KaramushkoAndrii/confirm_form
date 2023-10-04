@@ -1,0 +1,25 @@
+include layout/head.pug           
+
+body
+        
+        .main__wrapper 
+            .succes__icon 
+                svg(width="48" height="48")
+                    use(xlink:href=("img/sprites/sprite-mono.svg#done"))
+            .succes__description 
+                p.order__done 
+                    | Заказ № 
+                    span#orderNumber
+                        | 5426589
+                    | успешно оформлен
+                p.order__thanks 
+                    | Благодарим за покупка. Сумма заказа
+                    span#orderPrice 
+                        | 3 548 
+                    |грн 
+                p.order__details 
+                    | Детали заказа можно посмотреть в личном кабинете или в письме, отправленном на ваш email.
+                p.order__callback 
+                    | Если у вас остались вопросы свяжитесь с нами по телефону: +38 067 941-86-45
+            a.back__toTheShop(href="#")
+                | Вернуться в магазин
